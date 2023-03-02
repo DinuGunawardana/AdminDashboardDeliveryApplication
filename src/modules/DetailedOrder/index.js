@@ -32,7 +32,7 @@ const DetailedOrder = () => {
       return;
     }
 
-    DataStore.query(OrderDish, (c) => c.orderID("eq", order.id)).then(
+    DataStore.query(OrderDish, (c) => c.orderID.eq(order.id)).then(
       setDishes
     );
   }, [order?.id]);

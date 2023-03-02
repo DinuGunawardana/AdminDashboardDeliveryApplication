@@ -21,10 +21,10 @@ const Orders = () => {
         .orderRestaurantId.eq(restaurant.id)
         .or((orderStatus) =>
           orderStatus
-            .status("eq", "NEW")
-            .status("eq", "COOKING")
-            .status("eq", "ACCEPTED")
-            .status("eq", "READY_FOR_PICKUP")
+            .status.eq("NEW")
+            .status.eq("COOKING")
+            .status.eq("ACCEPTED")
+            .status.eq("READY_FOR_PICKUP")
         )
     ).then(setOrders);
   }, [restaurant]);

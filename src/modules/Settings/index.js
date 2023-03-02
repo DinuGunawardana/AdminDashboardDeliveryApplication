@@ -43,9 +43,10 @@ const Settings = () => {
         name,
         image:
           "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant1.jpeg",
-        deliveryFee: 0,
-        minDeliveryTime: 15,
+        deliveryFee: 70,
+        mindeliveryTime: 15,
         maxDeliveryTime: 120,
+        rating: 4.6,
         address: address.label,
         lat: coordinates.lat,
         lng: coordinates.lng,

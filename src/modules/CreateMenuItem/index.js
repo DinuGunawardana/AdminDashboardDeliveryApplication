@@ -52,7 +52,7 @@ const CreateMenuItem = () => {
           <TextArea rows={4} placeholder="Enter dish description" />
         </Form.Item>
         <Form.Item
-          label="Price ($)"
+          label="Price (Rs.)"
           name="price"
           rules={[{ required: true }]}
           required

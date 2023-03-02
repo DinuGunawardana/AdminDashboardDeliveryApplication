@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
 
   useEffect(() => {
     if (restaurant?.id) {
-      DataStore.query(Dish, (c) => c.restaurantID("eq", restaurant.id)).then(
+      DataStore.query(Dish, (c) => c.restaurantID.eq(restaurant.id)).then(
         setDishes
       );
     }
@@ -32,7 +32,7 @@ const RestaurantMenu = () => {
       title: "Price",
       dataIndex: "price",
       key: "price",
-      render: (price) => `${price} $`,
+      render: (price) => `Rs. ${price}`,
     },
     {
       title: "Action",

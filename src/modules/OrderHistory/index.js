@@ -17,12 +17,12 @@ const OrderHistory = () => {
     }
     DataStore.query(Order, (order) =>
       order
-        .orderRestaurantId("eq", restaurant.id)
+        .orderRestaurantId.eq(restaurant.id)
         .or((orderStatus) =>
           orderStatus
-            .status("eq", "PICKED_UP")
-            .status("eq", "COMPLETED")
-            .status("eq", "DECLINED_BY_RESTAURANT")
+            .status.eq("PICKED_UP")
+            .status.eq("COMPLETED")
+            .status.eq("DECLINED_BY_RESTAURANT")
         )
     ).then(setOrders);
   }, [restaurant]);

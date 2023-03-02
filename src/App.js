@@ -17,7 +17,7 @@ function App() {
       <Layout>
         <Sider style={{ height: "100vh", backgroundColor: "white" }}>
           <Image
-            src="https://logos-world.net/wp-content/uploads/2020/11/Uber-Eats-Symbol.jpg"
+            src="https://alieat-storage82306-staging.s3.ap-northeast-1.amazonaws.com/1.png"
             preview={false}
           />
           <SideMenu />
