@@ -4,10 +4,10 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as studioTheme } from "./studioTheme";
 export { default as CourierCreateForm } from "./CourierCreateForm";
 export { default as CourierUpdateForm } from "./CourierUpdateForm";
-export { default as UserCreateForm } from "./UserCreateForm";
-export { default as UserUpdateForm } from "./UserUpdateForm";
 export { default as RestaurantCreateForm } from "./RestaurantCreateForm";
 export { default as RestaurantUpdateForm } from "./RestaurantUpdateForm";
+export { default as UserCreateForm } from "./UserCreateForm";
+export { default as UserUpdateForm } from "./UserUpdateForm";
+export { default as studioTheme } from "./studioTheme";
