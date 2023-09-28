@@ -17,6 +17,8 @@ add assests, componenets, contexts, modules.
 
 amplify pull --appId dyk21nf01cvge --envName staging 
 
+npx update-browserslist-db@latest
+
 npm start
 
 
